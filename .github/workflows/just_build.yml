@@ -1,5 +1,5 @@
 name : just_build_test
-  on : push
+on : push
   jobs:
     just_build:
       runs-on : ubuntu-latest

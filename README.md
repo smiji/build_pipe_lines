@@ -4,4 +4,3 @@ Add the github workflow for automatic build
     - under the .github/workflows/just_build.yml
         - provide the name tag
         - mention the event upon which the workflow should start
-        
