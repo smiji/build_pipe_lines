@@ -1,16 +1,10 @@
 name : just_build_test
 on : push
-  jobs:
-    just_build:
-      runs-on : ubuntu-latest
-      steps:
-        - uses: actions/checkout@v4
-        - name: Set up JDK 17
-          uses: actions/setup-java@v4
-          with :
-            java-version : 17
-            distribution: 'temurin'
-            cache: maven
-        - name :
-
-
+jobs:
+  just_build: # This is not a key word, you can choose any name
+    runs-on : ubuntu-latest
+    steps:
+      - name : "Demo step"
+        run : echo "Hello world"
+      - name : "Bye sub step"
+        run : echo "Good bye!"
