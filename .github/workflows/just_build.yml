@@ -8,10 +8,13 @@ jobs:
         run : echo "Hello world"
       - name : 'Bye sub step'
         run : echo "Good bye!"
+# Check out the source in the internal work directory
+      - name : 'Check out code into internal runner/work folder'
+        uses : actions/checkout@v4
+        
       - name : 'Set up JDK 17'
         uses : actions/setup-java@v4
         with :
           java-version: '17'
           distribution: 'temurin'
           cache : 'maven'
-          
