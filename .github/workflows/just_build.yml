@@ -6,5 +6,5 @@ jobs:
     steps:
       - name : "Demo step"
         run : echo "Hello world"
-      - name : "Bye sub step"
+      - name : "Demo step"
         run : echo "Good bye!"
